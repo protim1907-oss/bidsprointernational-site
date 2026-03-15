@@ -261,7 +261,15 @@ export default function BidsProInternationalWebsite() {
               </button>
               <div className="mt-6 border-t border-slate-200 pt-5 text-sm leading-7 text-slate-600">
                 <div><span className="font-medium text-slate-800">Website:</span> bidsprointernational.com</div>
-                <div><span className="font-medium text-slate-800">Email:</span> info@bidsprointernational.com</div>
+                <div>
+  <span className="font-medium text-slate-800">Email:</span>{" "}
+  <a
+    href="mailto:protim.ghosh@bidsprointernational.com"
+    className="text-blue-600 hover:underline"
+  >
+    protim.ghosh@bidsprointernational.com
+  </a>
+</div>
               </div>
             </div>
           </div>
