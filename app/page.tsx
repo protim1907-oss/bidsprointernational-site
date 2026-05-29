@@ -58,6 +58,7 @@ export default function BidsProInternationalWebsite() {
             <a href="#services" className="hover:text-slate-900">Services</a>
             <a href="#sectors" className="hover:text-slate-900">Sectors</a>
             <a href="#why-us" className="hover:text-slate-900">Why Us</a>
+            <a href="#case-studies" className="hover:text-slate-900">Case Studies</a>
             <a href="#contact" className="hover:text-slate-900">Contact</a>
           </nav>
           <a
@@ -202,6 +203,56 @@ export default function BidsProInternationalWebsite() {
                   <div className="text-sm leading-7 text-slate-700">{item}</div>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        <section id="case-studies" className="border-y border-slate-200 bg-white">
+          <div className="mx-auto max-w-7xl px-6 py-18 lg:py-24">
+            <div className="max-w-3xl">
+              <div className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">Case Studies</div>
+              <h2 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">Delivery in practice</h2>
+              <p className="mt-4 text-lg leading-8 text-slate-600">
+                A look at how BidsPro International has helped clients move from idea to execution.
+              </p>
+            </div>
+            <div className="mt-10">
+              <div className="rounded-3xl border border-slate-200 bg-slate-50 p-8 shadow-sm">
+                <div className="flex flex-wrap items-center gap-3">
+                  <span className="rounded-full bg-slate-900 px-4 py-1.5 text-xs font-semibold text-white">Civix250</span>
+                  <span className="rounded-full border border-slate-300 bg-white px-4 py-1.5 text-xs font-medium text-slate-600">Eboriko Support LLC</span>
+                  <span className="rounded-full border border-slate-300 bg-white px-4 py-1.5 text-xs font-medium text-slate-600">MVP Planning &amp; Execution</span>
+                </div>
+                <h3 className="mt-6 text-2xl font-bold tracking-tight text-slate-900">Building Civix250 from the Ground Up</h3>
+                <div className="mt-8 grid gap-8 lg:grid-cols-2">
+                  <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+                    <div className="flex items-center gap-3">
+                      <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-red-50 text-red-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.8} stroke="currentColor" className="h-5 w-5">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" />
+                        </svg>
+                      </div>
+                      <div className="text-sm font-semibold uppercase tracking-widest text-slate-500">The Problem</div>
+                    </div>
+                    <p className="mt-4 text-sm leading-7 text-slate-700">
+                      Eboriko Support LLC had a clear vision for Civix250 — a civic technology platform — but no structured foundation to bring it to life. The client lacked a defined product scope, a delivery roadmap, or a prioritised set of features to guide development. Without these building blocks, the initiative risked stalling before any meaningful progress could be made. There was no process for translating stakeholder ideas into a coherent MVP, and no ownership over the technical direction or sequencing of work.
+                    </p>
+                  </div>
+                  <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+                    <div className="flex items-center gap-3">
+                      <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-green-50 text-green-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.8} stroke="currentColor" className="h-5 w-5">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg>
+                      </div>
+                      <div className="text-sm font-semibold uppercase tracking-widest text-slate-500">The Solution</div>
+                    </div>
+                    <p className="mt-4 text-sm leading-7 text-slate-700">
+                      BidsPro International led the end-to-end MVP planning and execution for Civix250. Working closely with Eboriko Support LLC, we ran structured discovery sessions to define user journeys, platform modules, and core feature priorities. We translated those inputs into a phased delivery roadmap with clear milestones, ownership, and sequencing. Throughout execution, we provided delivery governance, progress tracking, and stakeholder reporting — ensuring the build remained focused, on schedule, and aligned with the original product intent from day one.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
