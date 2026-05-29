@@ -59,6 +59,7 @@ export default function BidsProInternationalWebsite() {
             <a href="#sectors" className="hover:text-slate-900">Sectors</a>
             <a href="#why-us" className="hover:text-slate-900">Why Us</a>
             <a href="#case-studies" className="hover:text-slate-900">Case Studies</a>
+            <a href="#insights" className="hover:text-slate-900">Insights</a>
             <a href="#contact" className="hover:text-slate-900">Contact</a>
           </nav>
           <a
@@ -278,6 +279,42 @@ export default function BidsProInternationalWebsite() {
                     {item}
                   </div>
                 ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="insights" className="border-y border-slate-200 bg-slate-50">
+          <div className="mx-auto max-w-7xl px-6 py-18 lg:py-24">
+            <div className="max-w-3xl">
+              <div className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">Insights</div>
+              <h2 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">From the field</h2>
+            </div>
+            <div className="mt-10 max-w-3xl">
+              <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
+                <div className="flex items-center gap-3">
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl bg-slate-900 text-sm font-bold text-white">B</div>
+                  <div>
+                    <div className="text-sm font-semibold text-slate-900">BidsPro International</div>
+                    <div className="text-xs text-slate-500">IT Management • Program Delivery • MVP Advisory</div>
+                  </div>
+                </div>
+                <div className="mt-6 space-y-4 text-sm leading-7 text-slate-700">
+                  <p className="text-base font-semibold text-slate-900">Most MVPs don't fail because of bad ideas — they fail because of poor delivery structure.</p>
+                  <p>When Eboriko Support LLC came to us, they had a clear vision for Civix250, a civic technology platform built to make a real difference. What they didn't have was a structured path to get there. No defined scope, no delivery roadmap, no process for turning ideas into an MVP.</p>
+                  <p>That's where BidsPro International stepped in.</p>
+                  <p>We ran structured discovery sessions, mapped user journeys, defined platform modules, and built a phased roadmap with clear milestones and ownership. Then we stayed through execution — tracking progress, managing stakeholders, and keeping the build focused and on schedule.</p>
+                  <p>Civix250 went from concept to delivered MVP.</p>
+                  <p className="font-medium text-slate-800">If you're building a digital platform and need structured delivery support, let's talk.</p>
+                </div>
+                <div className="mt-6 flex flex-wrap gap-2">
+                  {["#MVPDelivery", "#CivicTech", "#ITManagement", "#ProductDelivery"].map((tag) => (
+                    <span key={tag} className="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-medium text-slate-500">{tag}</span>
+                  ))}
+                </div>
+                <div className="mt-6 border-t border-slate-100 pt-5">
+                  <a href="#contact" className="text-sm font-semibold text-slate-900 hover:underline">Get in touch →</a>
+                </div>
               </div>
             </div>
           </div>
