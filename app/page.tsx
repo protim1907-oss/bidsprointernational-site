@@ -225,6 +225,17 @@ export default function BidsProInternationalWebsite() {
                   <span className="rounded-full border border-slate-300 bg-white px-4 py-1.5 text-xs font-medium text-slate-600">MVP Planning &amp; Execution</span>
                 </div>
                 <h3 className="mt-6 text-2xl font-bold tracking-tight text-slate-900">Building Civix250 from the Ground Up</h3>
+                <div className="mt-6 overflow-hidden rounded-2xl border border-slate-200 shadow-sm" style={{aspectRatio: "16/9"}}>
+                  <iframe
+                    src="https://player.vimeo.com/video/1196948602?badge=0&autopause=0&player_id=0&app_id=58479"
+                    width="100%"
+                    height="100%"
+                    frameBorder="0"
+                    allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                    title="Civix250 – BidsPro International"
+                    style={{display: "block"}}
+                  />
+                </div>
                 <div className="mt-8 grid gap-8 lg:grid-cols-2">
                   <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
                     <div className="flex items-center gap-3">
