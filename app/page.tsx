@@ -227,7 +227,7 @@ export default function BidsProInternationalWebsite() {
                 <h3 className="mt-6 text-2xl font-bold tracking-tight text-slate-900">Building Civix250 from the Ground Up</h3>
                 <div className="mt-6 overflow-hidden rounded-2xl border border-slate-200 shadow-sm" style={{aspectRatio: "16/9"}}>
                   <iframe
-                    src="https://player.vimeo.com/video/1196948602?badge=0&autopause=0&player_id=0&app_id=58479"
+                    src="https://player.vimeo.com/video/1196948602?badge=0&autopause=0&player_id=0&app_id=58479&title=0&byline=0&portrait=0"
                     width="100%"
                     height="100%"
                     frameBorder="0"
