@@ -369,7 +369,7 @@ export default function BidsProInternationalWebsite() {
                   <div className="flex items-center gap-2"><span className="font-semibold text-slate-800">Website:</span> bidsprointernational.com</div>
                   <div className="flex items-center gap-2">
                     <span className="font-semibold text-slate-800">Email:</span>
-                    <a href="mailto:protim.ghosh@bidsprointernational.com" className="text-blue-600 hover:underline">protim.ghosh@bidsprointernational.com</a>
+                    <a href="mailto:protimghosh@bidsprointernational.com" className="text-blue-600 hover:underline">protimghosh@bidsprointernational.com</a>
                   </div>
                 </div>
               </div>
