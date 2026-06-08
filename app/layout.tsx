@@ -2,19 +2,19 @@ import "./globals.css";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "BidsPro International | IT Management & MVP Delivery for US & Europe",
+  title: "BidsPro International | Product & MVP Development for US & Europe",
   description:
-    "BidsPro International provides senior-led IT program management, MVP planning, delivery governance, and PMO support for startups, civic tech platforms, and growing organisations across the US and Europe.",
+    "BidsPro International is a product development partner that helps startups, civic-tech teams, and growing organisations take an idea from concept to a working MVP — with senior-led build leadership, structured roadmaps, and launch and iteration support across the US and Europe.",
   keywords: [
-    "IT program management",
-    "MVP planning",
-    "delivery management",
-    "PMO consulting",
-    "civic tech",
-    "digital platform delivery",
-    "IT management consultant",
-    "startup MVP advisor",
-    "US Europe IT services",
+    "MVP development",
+    "product development",
+    "product development partner",
+    "startup MVP build",
+    "civic tech platform",
+    "digital product launch",
+    "MVP delivery",
+    "product roadmap planning",
+    "US Europe product development",
     "BidsPro International",
   ],
   metadataBase: new URL("https://www.bidsprointernational.com"),
@@ -24,24 +24,24 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.bidsprointernational.com",
-    title: "BidsPro International | IT Management & MVP Delivery",
+    title: "BidsPro International | Product & MVP Development",
     description:
-      "Senior-led IT program management, MVP planning, and delivery governance for organisations across the US and Europe. Structured support from concept to execution.",
+      "A product development partner helping startups and teams take ideas from concept to a working MVP — with senior-led build leadership and structured roadmaps, from idea to launch and beyond.",
     siteName: "BidsPro International",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "BidsPro International – IT Management & MVP Delivery",
+        alt: "BidsPro International – Product & MVP Development",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "BidsPro International | IT Management & MVP Delivery",
+    title: "BidsPro International | Product & MVP Development",
     description:
-      "Senior-led IT program management, MVP planning, and delivery governance for organisations across the US and Europe.",
+      "Helping startups and teams take ideas from concept to a working MVP — senior-led product development, from idea to launch.",
     images: ["/og-image.png"],
   },
   robots: {
