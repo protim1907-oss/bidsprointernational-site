@@ -329,6 +329,19 @@ export default function BidsProInternationalWebsite() {
                     </p>
                   </div>
                 </div>
+                <div className="border-t border-slate-100 p-8">
+                  <div className="text-xs font-bold uppercase tracking-widest text-slate-400">The Solution in practice</div>
+                  <div className="mt-4 grid gap-4 sm:grid-cols-2">
+                    <figure className="overflow-hidden rounded-xl border border-slate-200 bg-slate-50 shadow-sm">
+                      <img src="/case-studies/semiconductor-layout.png" alt="Redesigned website layout — streamlined navigation, clear hero messaging, and modular content blocks" className="block w-full" />
+                      <figcaption className="px-4 py-3 text-xs leading-5 text-slate-500">New site layout — streamlined navigation, clear hero messaging, and modular content blocks.</figcaption>
+                    </figure>
+                    <figure className="overflow-hidden rounded-xl border border-slate-200 bg-slate-50 shadow-sm">
+                      <img src="/case-studies/semiconductor-hero.png" alt="Redesigned AI-memory hero banner" className="block w-full" />
+                      <figcaption className="px-4 py-3 text-xs leading-5 text-slate-500">Refreshed hero reflecting the client&apos;s AI-driven, semiconductor-forward brand.</figcaption>
+                    </figure>
+                  </div>
+                </div>
                 <div className="flex flex-wrap items-center gap-x-8 gap-y-4 border-t border-slate-100 bg-slate-50 px-8 py-6">
                   <div className="text-xs font-bold uppercase tracking-widest text-slate-400">Results</div>
                   <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm font-semibold text-slate-700">
