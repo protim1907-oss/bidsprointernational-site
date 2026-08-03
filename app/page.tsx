@@ -238,7 +238,7 @@ export default function BidsProInternationalWebsite() {
               <h2 className="mt-4 text-3xl font-bold tracking-tight sm:text-4xl">Delivery in practice</h2>
               <p className="mt-4 text-lg leading-8 text-slate-500">How BidsPro International helps clients move from idea to execution.</p>
             </div>
-            <div className="mt-14">
+            <div className="mt-14 space-y-8">
               <div className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-xl">
                 <div className="p-8 pb-0">
                   <div className="flex flex-wrap items-center gap-3">
@@ -286,6 +286,68 @@ export default function BidsProInternationalWebsite() {
                       BidsPro International led end-to-end MVP planning and execution for Civix250. We ran structured discovery sessions, mapped user journeys, defined platform modules, and built a phased delivery roadmap with clear milestones. We stayed through execution — tracking progress, managing stakeholders, and keeping the build on schedule from day one.
                     </p>
                   </div>
+                </div>
+              </div>
+
+              <div className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-xl">
+                <div className="p-8 pb-0">
+                  <div className="flex flex-wrap items-center gap-3">
+                    <span className="rounded-full px-4 py-1.5 text-xs font-bold text-white" style={{background: "linear-gradient(135deg, #3b82f6, #6366f1)"}}>Website Redesign</span>
+                    <span className="rounded-full border border-slate-200 bg-slate-50 px-4 py-1.5 text-xs font-medium text-slate-600">Global Semiconductor Company</span>
+                    <span className="rounded-full border border-slate-200 bg-slate-50 px-4 py-1.5 text-xs font-medium text-slate-600">UI/UX &amp; Frontend</span>
+                  </div>
+                  <h3 className="mt-5 text-2xl font-bold tracking-tight text-slate-900">Website Redesign for a Global Semiconductor Company</h3>
+                  <p className="mt-3 text-sm leading-7 text-slate-500">
+                    How BidsPro International helped a global semiconductor manufacturer revamp its website to better reflect its supply-chain vision and improve UI — achieving 40% growth in engaged sessions.
+                  </p>
+                </div>
+                <div className="grid gap-0 lg:grid-cols-2">
+                  <div className="border-t border-slate-100 p-8 lg:border-r">
+                    <div className="flex items-center gap-3">
+                      <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-red-50 text-red-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.8} stroke="currentColor" className="h-5 w-5">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" />
+                        </svg>
+                      </div>
+                      <div className="text-xs font-bold uppercase tracking-widest text-slate-400">The Problem</div>
+                    </div>
+                    <p className="mt-4 text-sm leading-7 text-slate-600">
+                      The client — a global semiconductor manufacturer evolving from a memory supplier into a “Full Stack AI Memory Creator” — needed a more user-friendly, visually engaging website to reflect its AI-driven mission and growing influence in the semiconductor space. The goals: a modern, intuitive frontend; seamless navigation and clear communication for users, enterprise partners, and the broader industry; and stronger site performance and engagement.
+                    </p>
+                  </div>
+                  <div className="border-t border-slate-100 p-8">
+                    <div className="flex items-center gap-3">
+                      <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-green-50 text-green-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.8} stroke="currentColor" className="h-5 w-5">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg>
+                      </div>
+                      <div className="text-xs font-bold uppercase tracking-widest text-slate-400">The Solution</div>
+                    </div>
+                    <p className="mt-4 text-sm leading-7 text-slate-600">
+                      BidsPro International delivered an end-to-end redesign. After a kickoff and discovery phase to align on goals and scope, our design team crafted a visually appealing, functional layout reflecting the client&apos;s AI-driven, tech-forward ethos. We built the site on Drupal 10 — with Tailwind CSS and TypeScript — integrating cleanly with the client&apos;s existing backend and streamlining content workflows for rapid component delivery.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex flex-wrap items-center gap-x-8 gap-y-4 border-t border-slate-100 bg-slate-50 px-8 py-6">
+                  <div className="text-xs font-bold uppercase tracking-widest text-slate-400">Results</div>
+                  <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm font-semibold text-slate-700">
+                    <span><span className="text-green-600">+40%</span> engaged sessions</span>
+                    <span><span className="text-green-600">+24%</span> sessions</span>
+                    <span><span className="text-green-600">+54%</span> event count</span>
+                    <span><span className="text-green-600">+24%</span> events / session</span>
+                  </div>
+                  <a
+                    href="/case-studies/website-redesign-semiconductor.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="ml-auto inline-flex items-center gap-2 rounded-2xl bg-slate-900 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-slate-800"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.8} stroke="currentColor" className="h-4 w-4">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                    </svg>
+                    Download case study (PDF)
+                  </a>
                 </div>
               </div>
             </div>
