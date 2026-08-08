@@ -2,6 +2,7 @@ import Reveal from "./components/Reveal";
 import CountUp from "./components/CountUp";
 import ScrollProgress from "./components/ScrollProgress";
 import TechMarquee from "./components/TechMarquee";
+import LaptopFrame from "./components/LaptopFrame";
 
 export default function BidsProInternationalWebsite() {
   const stats = [
@@ -148,7 +149,7 @@ export default function BidsProInternationalWebsite() {
             </div>
 
             <div className="bp-enter bp-enter-4 flex items-center">
-              <div className="w-full rounded-3xl border border-slate-700/60 bg-slate-800/50 p-6 shadow-2xl backdrop-blur">
+              <LaptopFrame>
                 <div className="rounded-2xl p-5 text-white" style={{background: "linear-gradient(135deg, #1d4ed8 0%, #4338ca 100%)"}}>
                   <div className="text-xs font-semibold uppercase tracking-widest text-blue-200">Core Focus</div>
                   <div className="mt-2 text-xl font-semibold leading-7">Helping founders and teams turn ideas into working products — with the structure, technical direction, and delivery discipline that takes an MVP from concept to launch, and beyond.</div>
@@ -176,7 +177,7 @@ export default function BidsProInternationalWebsite() {
                     Practical, collaborative, and launch-focused — tailored to the scale, urgency, and complexity of each product.
                   </div>
                 </div>
-              </div>
+              </LaptopFrame>
             </div>
           </div>
         </section>
