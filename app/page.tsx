@@ -363,6 +363,68 @@ export default function BidsProInternationalWebsite() {
                   </a>
                 </div>
               </div>
+
+              <div className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-xl">
+                <div className="p-8 pb-0">
+                  <div className="flex flex-wrap items-center gap-3">
+                    <span className="rounded-full px-4 py-1.5 text-xs font-bold text-white" style={{background: "linear-gradient(135deg, #3b82f6, #6366f1)"}}>KYC Compliance</span>
+                    <span className="rounded-full border border-slate-200 bg-slate-50 px-4 py-1.5 text-xs font-medium text-slate-600">New Jersey Fintech</span>
+                    <span className="rounded-full border border-slate-200 bg-slate-50 px-4 py-1.5 text-xs font-medium text-slate-600">Mobile &amp; Backend Engineering</span>
+                  </div>
+                  <h3 className="mt-5 text-2xl font-bold tracking-tight text-slate-900">Building a Compliant KYC Experience for a Growing New Jersey Fintech</h3>
+                  <p className="mt-3 text-sm leading-7 text-slate-500">
+                    How a multi-layered identity-verification framework helped a fast-growing consumer finance app scale onboarding across new U.S. states without compromising on regulatory compliance.
+                  </p>
+                </div>
+                <div className="grid gap-0 lg:grid-cols-2">
+                  <div className="border-t border-slate-100 p-8 lg:border-r">
+                    <div className="flex items-center gap-3">
+                      <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-red-50 text-red-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.8} stroke="currentColor" className="h-5 w-5">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" />
+                        </svg>
+                      </div>
+                      <div className="text-xs font-bold uppercase tracking-widest text-slate-400">The Problem</div>
+                    </div>
+                    <p className="mt-4 text-sm leading-7 text-slate-600">
+                      A digital-first lender serving underbanked households crossed a million active customers in under a year — and its single-market verification setup couldn&apos;t keep up with multi-state expansion. Verification vendors returned inconsistent match confidence, mismatched ID, address, and phone records forced legitimate users into manual-review queues and abandoned sign-ups, and every new state added its own identity-proofing, disclosure, and recordkeeping rules amid constantly shifting AML and data-protection standards.
+                    </p>
+                  </div>
+                  <div className="border-t border-slate-100 p-8">
+                    <div className="flex items-center gap-3">
+                      <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-green-50 text-green-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.8} stroke="currentColor" className="h-5 w-5">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg>
+                      </div>
+                      <div className="text-xs font-bold uppercase tracking-widest text-slate-400">The Solution</div>
+                    </div>
+                    <p className="mt-4 text-sm leading-7 text-slate-600">
+                      BidsPro International rebuilt the identity layer as a flexible, multi-provider framework. We combined liveness-checked facial recognition with automated government-ID scanning, cross-checked Social Security records, address history, and phone-number ownership, and added an orchestration layer that routes each verification to the right vendor based on the customer&apos;s home state — so new regional providers plug in without touching core app code. The stack pairs a React Native mobile app with a modular NestJS backend and field-level AES-256 encryption on AWS, keeping verification logic decoupled from the app&apos;s release cycle.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex flex-wrap items-center gap-x-8 gap-y-4 border-t border-slate-100 bg-slate-50 px-8 py-6">
+                  <div className="text-xs font-bold uppercase tracking-widest text-slate-400">Results</div>
+                  <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm font-semibold text-slate-700">
+                    <span><span className="text-green-600">&lt; 6 weeks</span> to onboard a new regional provider</span>
+                    <span><span className="text-green-600">1M+</span> active customers supported</span>
+                    <span><span className="text-green-600">Multi-state</span> compliant launches</span>
+                    <span><span className="text-green-600">9/10</span> client satisfaction</span>
+                  </div>
+                  <a
+                    href="/case-studies/kyc-compliance-new-jersey-fintech.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="ml-auto inline-flex items-center gap-2 rounded-2xl bg-slate-900 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-slate-800"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.8} stroke="currentColor" className="h-4 w-4">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                    </svg>
+                    Download case study (PDF)
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </section>
