@@ -1,4 +1,16 @@
+import Reveal from "./components/Reveal";
+import CountUp from "./components/CountUp";
+import ScrollProgress from "./components/ScrollProgress";
+import TechMarquee from "./components/TechMarquee";
+
 export default function BidsProInternationalWebsite() {
+  const stats = [
+    { value: 1, suffix: "M+", decimals: 0, label: "Active users supported across delivered products" },
+    { value: 40, prefix: "+", suffix: "%", decimals: 0, label: "Peak engagement lift from a product redesign" },
+    { value: 6, prefix: "< ", suffix: " wks", decimals: 0, label: "To stand up a new market for a scaling fintech" },
+    { value: 9, suffix: "/10", decimals: 0, label: "Client-reported satisfaction on delivery" },
+  ];
+
   const services = [
     {
       icon: (
@@ -64,6 +76,8 @@ export default function BidsProInternationalWebsite() {
   return (
     <div className="min-h-screen bg-white text-slate-900" style={{fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"}}>
 
+      <ScrollProgress />
+
       {/* ── NAV ── */}
       <header className="sticky top-0 z-40 border-b border-slate-100 bg-white/95 backdrop-blur-md">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
@@ -93,36 +107,39 @@ export default function BidsProInternationalWebsite() {
         <section className="relative overflow-hidden" style={{background: "linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%)"}}>
           <div className="absolute inset-0" style={{backgroundImage: "radial-gradient(circle at 20% 50%, rgba(59,130,246,0.15) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(99,102,241,0.1) 0%, transparent 40%)"}} />
           <div className="absolute inset-0 opacity-5" style={{backgroundImage: "repeating-linear-gradient(0deg, transparent, transparent 80px, rgba(255,255,255,0.3) 80px, rgba(255,255,255,0.3) 81px), repeating-linear-gradient(90deg, transparent, transparent 80px, rgba(255,255,255,0.3) 80px, rgba(255,255,255,0.3) 81px)"}} />
+          {/* floating gradient blobs */}
+          <div className="bp-blob pointer-events-none absolute -left-24 top-10 h-96 w-96 rounded-full opacity-40 blur-3xl" style={{background: "radial-gradient(circle, rgba(59,130,246,0.5), transparent 70%)"}} />
+          <div className="bp-blob-slow pointer-events-none absolute -right-16 bottom-0 h-[28rem] w-[28rem] rounded-full opacity-30 blur-3xl" style={{background: "radial-gradient(circle, rgba(99,102,241,0.5), transparent 70%)"}} />
           <div className="relative mx-auto grid max-w-7xl gap-16 px-6 py-24 lg:grid-cols-[1.1fr_0.9fr] lg:py-32">
             <div>
-              <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-blue-500/30 bg-blue-500/10 px-4 py-2 text-xs font-medium text-blue-300">
-                <span className="h-1.5 w-1.5 rounded-full bg-blue-400" />
+              <div className="bp-enter bp-enter-1 mb-6 inline-flex items-center gap-2 rounded-full border border-blue-500/30 bg-blue-500/10 px-4 py-2 text-xs font-medium text-blue-300">
+                <span className="bp-pulse-dot h-1.5 w-1.5 rounded-full bg-blue-400" />
                 Serving clients across Europe and the U.S.
               </div>
-              <h1 className="max-w-2xl text-4xl font-bold leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl">
+              <h1 className="bp-enter bp-enter-2 max-w-2xl text-4xl font-bold leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl">
                 We Build Digital Products —{" "}
-                <span style={{background: "linear-gradient(90deg, #60a5fa, #818cf8)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent"}}>
+                <span className="bp-gradient-text" style={{background: "linear-gradient(90deg, #60a5fa, #818cf8, #60a5fa)", WebkitBackgroundClip: "text", backgroundClip: "text", WebkitTextFillColor: "transparent"}}>
                   From Idea to Launch
                 </span>
               </h1>
-              <p className="mt-6 max-w-xl text-lg leading-8 text-slate-400">
+              <p className="bp-enter bp-enter-3 mt-6 max-w-xl text-lg leading-8 text-slate-400">
                 BidsPro International is a product development partner for startups, civic-tech teams, and growing organisations. We take your idea from concept to a working MVP — and bring the structure, technical direction, and senior leadership real products need to actually reach launch.
               </p>
-              <div className="mt-8 flex flex-wrap gap-4">
-                <a href="#contact" className="rounded-2xl px-7 py-3.5 text-sm font-semibold text-white shadow-lg transition hover:opacity-90" style={{background: "linear-gradient(135deg, #3b82f6 0%, #6366f1 100%)"}}>
+              <div className="bp-enter bp-enter-4 mt-8 flex flex-wrap gap-4">
+                <a href="#contact" className="rounded-2xl px-7 py-3.5 text-sm font-semibold text-white shadow-lg transition duration-200 hover:-translate-y-0.5 hover:opacity-90 hover:shadow-blue-500/30" style={{background: "linear-gradient(135deg, #3b82f6 0%, #6366f1 100%)"}}>
                   Start Your Product
                 </a>
-                <a href="#case-studies" className="rounded-2xl border border-slate-600 bg-white/5 px-7 py-3.5 text-sm font-semibold text-slate-200 backdrop-blur transition hover:bg-white/10 hover:border-slate-400">
+                <a href="#case-studies" className="rounded-2xl border border-slate-600 bg-white/5 px-7 py-3.5 text-sm font-semibold text-slate-200 backdrop-blur transition duration-200 hover:-translate-y-0.5 hover:bg-white/10 hover:border-slate-400">
                   See What We've Built
                 </a>
               </div>
-              <div className="mt-12 grid max-w-xl gap-4 sm:grid-cols-3">
+              <div className="bp-enter bp-enter-5 mt-12 grid max-w-xl gap-4 sm:grid-cols-3">
                 {[
                   ["Built to Launch", "MVPs that reach real users — not plans that sit on a shelf"],
                   ["Senior-Led Craft", "Direct involvement from experienced product leaders"],
                   ["Structured Momentum", "Clear roadmaps and milestones that keep builds on track"],
                 ].map(([title, desc]) => (
-                  <div key={title} className="rounded-2xl border border-slate-700/60 bg-slate-800/50 p-4 backdrop-blur">
+                  <div key={title} className="rounded-2xl border border-slate-700/60 bg-slate-800/50 p-4 backdrop-blur transition duration-200 hover:-translate-y-1 hover:border-blue-500/40 hover:bg-slate-800/80">
                     <div className="text-sm font-semibold text-white">{title}</div>
                     <div className="mt-1.5 text-xs leading-5 text-slate-400">{desc}</div>
                   </div>
@@ -130,7 +147,7 @@ export default function BidsProInternationalWebsite() {
               </div>
             </div>
 
-            <div className="flex items-center">
+            <div className="bp-enter bp-enter-4 flex items-center">
               <div className="w-full rounded-3xl border border-slate-700/60 bg-slate-800/50 p-6 shadow-2xl backdrop-blur">
                 <div className="rounded-2xl p-5 text-white" style={{background: "linear-gradient(135deg, #1d4ed8 0%, #4338ca 100%)"}}>
                   <div className="text-xs font-semibold uppercase tracking-widest text-blue-200">Core Focus</div>
@@ -164,22 +181,57 @@ export default function BidsProInternationalWebsite() {
           </div>
         </section>
 
+        {/* ── TECH MARQUEE ── */}
+        <section className="border-b border-slate-800 bg-slate-950">
+          <div className="mx-auto max-w-7xl px-6 py-8">
+            <div className="mb-2 text-center text-xs font-semibold uppercase tracking-widest text-slate-500">
+              Built with the tools that ship real products
+            </div>
+            <TechMarquee />
+          </div>
+        </section>
+
+        {/* ── STATS ── */}
+        <section className="border-b border-slate-100 bg-slate-50">
+          <div className="mx-auto max-w-7xl px-6 py-16 lg:py-20">
+            <Reveal className="mx-auto max-w-2xl text-center">
+              <div className="inline-flex rounded-full border border-blue-100 bg-blue-50 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-blue-600">By the numbers</div>
+              <h2 className="mt-4 text-3xl font-bold tracking-tight sm:text-4xl">Outcomes we&apos;ve delivered</h2>
+              <p className="mt-4 text-lg leading-8 text-slate-500">Real results from products we&apos;ve helped take from idea to launch.</p>
+            </Reveal>
+            <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+              {stats.map((stat, i) => (
+                <Reveal key={stat.label} delay={i * 90}>
+                  <div className="group h-full rounded-3xl border border-slate-200 bg-white p-7 text-center shadow-sm transition duration-200 hover:-translate-y-1 hover:border-blue-200 hover:shadow-lg">
+                    <div className="text-4xl font-black tracking-tight sm:text-5xl" style={{background: "linear-gradient(135deg, #3b82f6, #6366f1)", WebkitBackgroundClip: "text", backgroundClip: "text", WebkitTextFillColor: "transparent"}}>
+                      <CountUp value={stat.value} prefix={stat.prefix} suffix={stat.suffix} decimals={stat.decimals} />
+                    </div>
+                    <div className="mt-3 text-sm leading-6 text-slate-500">{stat.label}</div>
+                  </div>
+                </Reveal>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* ── SERVICES ── */}
         <section id="services" className="mx-auto max-w-7xl px-6 py-20 lg:py-28">
-          <div className="text-center max-w-2xl mx-auto">
+          <Reveal className="text-center max-w-2xl mx-auto">
             <div className="inline-flex rounded-full border border-blue-100 bg-blue-50 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-blue-600">What We Build</div>
             <h2 className="mt-4 text-3xl font-bold tracking-tight sm:text-4xl">Product &amp; MVP development built for launch</h2>
             <p className="mt-4 text-lg leading-8 text-slate-500">From first idea to a working product in users' hands — with the structure, technical direction, and senior leadership it takes to actually ship.</p>
-          </div>
+          </Reveal>
           <div className="mt-14 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-            {services.map((service) => (
-              <div key={service.title} className="group rounded-3xl border border-slate-200 bg-white p-7 shadow-sm transition duration-200 hover:-translate-y-1 hover:border-blue-200 hover:shadow-lg">
-                <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-blue-50 text-blue-600 transition group-hover:bg-blue-600 group-hover:text-white">
-                  {service.icon}
+            {services.map((service, i) => (
+              <Reveal key={service.title} delay={i * 90}>
+                <div className="group h-full rounded-3xl border border-slate-200 bg-white p-7 shadow-sm transition duration-200 hover:-translate-y-1 hover:border-blue-200 hover:shadow-lg">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-blue-50 text-blue-600 transition group-hover:bg-blue-600 group-hover:text-white group-hover:scale-110">
+                    {service.icon}
+                  </div>
+                  <div className="mt-5 text-base font-bold tracking-tight text-slate-900">{service.title}</div>
+                  <p className="mt-3 text-sm leading-7 text-slate-500">{service.desc}</p>
                 </div>
-                <div className="mt-5 text-base font-bold tracking-tight text-slate-900">{service.title}</div>
-                <p className="mt-3 text-sm leading-7 text-slate-500">{service.desc}</p>
-              </div>
+              </Reveal>
             ))}
           </div>
         </section>
@@ -188,22 +240,24 @@ export default function BidsProInternationalWebsite() {
         <section id="sectors" className="bg-slate-950 text-white">
           <div className="mx-auto max-w-7xl px-6 py-20 lg:py-28">
             <div className="grid gap-14 lg:grid-cols-[0.9fr_1.1fr]">
-              <div>
+              <Reveal>
                 <div className="inline-flex rounded-full border border-blue-500/30 bg-blue-500/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-blue-400">Industries</div>
                 <h2 className="mt-4 text-3xl font-bold tracking-tight sm:text-4xl">Industries we build products for</h2>
                 <p className="mt-4 text-lg leading-8 text-slate-400">
                   We partner with founders and teams building digital products across these spaces — wherever your product needs to launch and grow.
                 </p>
-                <a href="#contact" className="mt-8 inline-flex rounded-2xl px-6 py-3 text-sm font-semibold text-white transition hover:opacity-90" style={{background: "linear-gradient(135deg, #3b82f6 0%, #6366f1 100%)"}}>
+                <a href="#contact" className="mt-8 inline-flex rounded-2xl px-6 py-3 text-sm font-semibold text-white transition duration-200 hover:-translate-y-0.5 hover:opacity-90" style={{background: "linear-gradient(135deg, #3b82f6 0%, #6366f1 100%)"}}>
                   Start Your Product
                 </a>
-              </div>
+              </Reveal>
               <div className="grid gap-3 sm:grid-cols-2">
-                {sectors.map((sector) => (
-                  <div key={sector.label} className="flex items-center gap-3 rounded-2xl border border-slate-800 bg-slate-900/60 px-5 py-4 transition hover:border-slate-700 hover:bg-slate-800/60">
-                    <span className="text-2xl">{sector.icon}</span>
-                    <span className="text-sm font-medium text-slate-300">{sector.label}</span>
-                  </div>
+                {sectors.map((sector, i) => (
+                  <Reveal key={sector.label} delay={i * 70}>
+                    <div className="flex items-center gap-3 rounded-2xl border border-slate-800 bg-slate-900/60 px-5 py-4 transition duration-200 hover:-translate-y-1 hover:border-blue-500/40 hover:bg-slate-800/60">
+                      <span className="text-2xl transition-transform duration-200 group-hover:scale-110">{sector.icon}</span>
+                      <span className="text-sm font-medium text-slate-300">{sector.label}</span>
+                    </div>
+                  </Reveal>
                 ))}
               </div>
             </div>
@@ -212,20 +266,22 @@ export default function BidsProInternationalWebsite() {
 
         {/* ── WHY US ── */}
         <section id="why-us" className="mx-auto max-w-7xl px-6 py-20 lg:py-28">
-          <div className="text-center max-w-2xl mx-auto">
+          <Reveal className="text-center max-w-2xl mx-auto">
             <div className="inline-flex rounded-full border border-blue-100 bg-blue-50 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-blue-600">Why BidsPro</div>
             <h2 className="mt-4 text-3xl font-bold tracking-tight sm:text-4xl">A product partner, not just a service provider</h2>
             <p className="mt-4 text-lg leading-8 text-slate-500">BidsPro International exists to help founders and teams turn ideas into working products — combining hands-on product development with the planning discipline that keeps ambitious builds on track, without the overhead of a large agency.</p>
-          </div>
+          </Reveal>
           <div className="mt-14 grid gap-6 md:grid-cols-2">
-            {differentiators.map((item) => (
-              <div key={item.num} className="group flex gap-6 rounded-3xl border border-slate-200 bg-white p-7 shadow-sm transition hover:border-blue-200 hover:shadow-md">
-                <div className="shrink-0 text-3xl font-black text-slate-100 transition group-hover:text-blue-100">{item.num}</div>
-                <div>
-                  <div className="text-base font-bold text-slate-900">{item.title}</div>
-                  <div className="mt-2 text-sm leading-7 text-slate-500">{item.desc}</div>
+            {differentiators.map((item, i) => (
+              <Reveal key={item.num} delay={i * 90}>
+                <div className="group flex h-full gap-6 rounded-3xl border border-slate-200 bg-white p-7 shadow-sm transition duration-200 hover:-translate-y-1 hover:border-blue-200 hover:shadow-md">
+                  <div className="shrink-0 text-3xl font-black text-slate-100 transition duration-200 group-hover:text-blue-200 group-hover:scale-110">{item.num}</div>
+                  <div>
+                    <div className="text-base font-bold text-slate-900">{item.title}</div>
+                    <div className="mt-2 text-sm leading-7 text-slate-500">{item.desc}</div>
+                  </div>
                 </div>
-              </div>
+              </Reveal>
             ))}
           </div>
         </section>
@@ -233,13 +289,14 @@ export default function BidsProInternationalWebsite() {
         {/* ── CASE STUDIES ── */}
         <section id="case-studies" className="bg-slate-50">
           <div className="mx-auto max-w-7xl px-6 py-20 lg:py-28">
-            <div className="text-center max-w-2xl mx-auto">
+            <Reveal className="text-center max-w-2xl mx-auto">
               <div className="inline-flex rounded-full border border-blue-100 bg-blue-50 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-blue-600">Case Studies</div>
               <h2 className="mt-4 text-3xl font-bold tracking-tight sm:text-4xl">Delivery in practice</h2>
               <p className="mt-4 text-lg leading-8 text-slate-500">How BidsPro International helps clients move from idea to execution.</p>
-            </div>
+            </Reveal>
             <div className="mt-14 space-y-8">
-              <div className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-xl">
+              <Reveal>
+              <div className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-xl transition duration-300 hover:-translate-y-1 hover:shadow-2xl">
                 <div className="p-8 pb-0">
                   <div className="flex flex-wrap items-center gap-3">
                     <span className="rounded-full px-4 py-1.5 text-xs font-bold text-white" style={{background: "linear-gradient(135deg, #3b82f6, #6366f1)"}}>Civix250</span>
@@ -288,8 +345,10 @@ export default function BidsProInternationalWebsite() {
                   </div>
                 </div>
               </div>
+              </Reveal>
 
-              <div className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-xl">
+              <Reveal>
+              <div className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-xl transition duration-300 hover:-translate-y-1 hover:shadow-2xl">
                 <div className="p-8 pb-0">
                   <div className="flex flex-wrap items-center gap-3">
                     <span className="rounded-full px-4 py-1.5 text-xs font-bold text-white" style={{background: "linear-gradient(135deg, #3b82f6, #6366f1)"}}>Website Redesign</span>
@@ -363,8 +422,10 @@ export default function BidsProInternationalWebsite() {
                   </a>
                 </div>
               </div>
+              </Reveal>
 
-              <div className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-xl">
+              <Reveal>
+              <div className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-xl transition duration-300 hover:-translate-y-1 hover:shadow-2xl">
                 <div className="p-8 pb-0">
                   <div className="flex flex-wrap items-center gap-3">
                     <span className="rounded-full px-4 py-1.5 text-xs font-bold text-white" style={{background: "linear-gradient(135deg, #3b82f6, #6366f1)"}}>KYC Compliance</span>
@@ -425,6 +486,7 @@ export default function BidsProInternationalWebsite() {
                   </a>
                 </div>
               </div>
+              </Reveal>
             </div>
           </div>
         </section>
@@ -433,24 +495,26 @@ export default function BidsProInternationalWebsite() {
         <section style={{background: "linear-gradient(135deg, #0f172a 0%, #1e293b 100%)"}}>
           <div className="mx-auto max-w-7xl px-6 py-20 lg:py-28">
             <div className="grid gap-14 lg:grid-cols-[1fr_1fr]">
-              <div>
+              <Reveal>
                 <div className="inline-flex rounded-full border border-blue-500/30 bg-blue-500/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-blue-400">How We Build</div>
                 <h2 className="mt-4 text-3xl font-bold tracking-tight text-white sm:text-4xl">A structured path from concept to launch</h2>
                 <p className="mt-4 text-lg leading-8 text-slate-400">
                   Most products don't fail because the idea was wrong — they fail because no one carried the plan through to launch. Here's how we keep that from happening to yours.
                 </p>
-              </div>
+              </Reveal>
               <div className="grid gap-3">
                 {[
                   ["01", "Discover — stakeholder workshops and scope alignment"],
                   ["02", "Define — roadmap planning, user journeys, and milestones"],
                   ["03", "Build — hands-on execution, tracking, and reporting"],
                   ["04", "Launch & Grow — coordination through launch and beyond"],
-                ].map(([num, item]) => (
-                  <div key={num} className="flex items-center gap-4 rounded-2xl border border-slate-700/60 bg-slate-800/50 px-6 py-4">
-                    <span className="text-xs font-black text-blue-500">{num}</span>
-                    <span className="text-sm font-medium text-slate-200">{item}</span>
-                  </div>
+                ].map(([num, item], i) => (
+                  <Reveal key={num} delay={i * 90}>
+                    <div className="group flex items-center gap-4 rounded-2xl border border-slate-700/60 bg-slate-800/50 px-6 py-4 transition duration-200 hover:-translate-y-0.5 hover:border-blue-500/40 hover:bg-slate-800/80">
+                      <span className="text-xs font-black text-blue-500 transition-transform duration-200 group-hover:scale-125">{num}</span>
+                      <span className="text-sm font-medium text-slate-200">{item}</span>
+                    </div>
+                  </Reveal>
                 ))}
               </div>
             </div>
@@ -459,12 +523,12 @@ export default function BidsProInternationalWebsite() {
 
         {/* ── INSIGHTS ── */}
         <section id="insights" className="mx-auto max-w-7xl px-6 py-20 lg:py-28">
-          <div className="text-center max-w-2xl mx-auto">
+          <Reveal className="text-center max-w-2xl mx-auto">
             <div className="inline-flex rounded-full border border-blue-100 bg-blue-50 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-blue-600">Insights</div>
             <h2 className="mt-4 text-3xl font-bold tracking-tight sm:text-4xl">From the field</h2>
-          </div>
-          <div className="mt-14 max-w-3xl mx-auto">
-            <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-lg">
+          </Reveal>
+          <Reveal className="mt-14 max-w-3xl mx-auto">
+            <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-lg transition duration-300 hover:-translate-y-1 hover:shadow-xl">
               <div className="flex items-center gap-3">
                 <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl text-base font-bold text-white shadow-md" style={{background: "linear-gradient(135deg, #3b82f6, #6366f1)"}}>B</div>
                 <div>
@@ -489,14 +553,14 @@ export default function BidsProInternationalWebsite() {
                 <a href="#contact" className="text-sm font-bold text-blue-600 transition hover:text-blue-700">Get in touch →</a>
               </div>
             </div>
-          </div>
+          </Reveal>
         </section>
 
         {/* ── CONTACT ── */}
         <section id="contact" className="bg-slate-50">
           <div className="mx-auto max-w-7xl px-6 py-20 lg:py-28">
             <div className="grid gap-14 lg:grid-cols-[0.9fr_1.1fr]">
-              <div>
+              <Reveal>
                 <div className="inline-flex rounded-full border border-blue-100 bg-blue-50 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-blue-600">Start a Project</div>
                 <h2 className="mt-4 text-3xl font-bold tracking-tight sm:text-4xl">Have a product idea? Let's build it.</h2>
                 <p className="mt-4 text-lg leading-8 text-slate-500">
@@ -509,7 +573,8 @@ export default function BidsProInternationalWebsite() {
                     <a href="mailto:protimghosh@bidsprointernational.com" className="text-blue-600 hover:underline">protimghosh@bidsprointernational.com</a>
                   </div>
                 </div>
-              </div>
+              </Reveal>
+              <Reveal>
               <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-lg">
                 <div className="grid gap-5 sm:grid-cols-2">
                   <div>
@@ -525,10 +590,11 @@ export default function BidsProInternationalWebsite() {
                   <label className="text-xs font-bold uppercase tracking-widest text-slate-500">How can we help?</label>
                   <textarea className="mt-2 h-36 w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm outline-none transition focus:border-blue-400 focus:bg-white focus:ring-2 focus:ring-blue-100" placeholder="Tell us about the product or MVP you want to build." />
                 </div>
-                <button className="mt-5 w-full rounded-2xl py-3.5 text-sm font-bold text-white shadow-md transition hover:opacity-90" style={{background: "linear-gradient(135deg, #3b82f6 0%, #6366f1 100%)"}}>
+                <button className="mt-5 w-full rounded-2xl py-3.5 text-sm font-bold text-white shadow-md transition duration-200 hover:-translate-y-0.5 hover:opacity-90" style={{background: "linear-gradient(135deg, #3b82f6 0%, #6366f1 100%)"}}>
                   Tell Us About Your Product
                 </button>
               </div>
+              </Reveal>
             </div>
           </div>
         </section>

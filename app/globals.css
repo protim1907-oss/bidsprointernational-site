@@ -14,3 +14,161 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* ============================================================
+   Motion & dynamic effects
+   ============================================================ */
+
+@keyframes bp-float {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(28px, -22px) scale(1.06);
+  }
+  66% {
+    transform: translate(-24px, 18px) scale(0.96);
+  }
+}
+
+@keyframes bp-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(26px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bp-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes bp-gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes bp-pulse-dot {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.4;
+    transform: scale(0.7);
+  }
+}
+
+/* Floating gradient blobs in the hero */
+.bp-blob {
+  animation: bp-float 20s ease-in-out infinite;
+  will-change: transform;
+}
+.bp-blob-slow {
+  animation: bp-float 30s ease-in-out infinite;
+  will-change: transform;
+}
+
+/* Staggered hero entrance */
+.bp-enter {
+  opacity: 0;
+  animation: bp-fade-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+.bp-enter-1 {
+  animation-delay: 0.05s;
+}
+.bp-enter-2 {
+  animation-delay: 0.18s;
+}
+.bp-enter-3 {
+  animation-delay: 0.31s;
+}
+.bp-enter-4 {
+  animation-delay: 0.44s;
+}
+.bp-enter-5 {
+  animation-delay: 0.57s;
+}
+
+/* Animated gradient text */
+.bp-gradient-text {
+  background-size: 200% auto;
+  animation: bp-gradient 6s ease infinite;
+}
+
+.bp-pulse-dot {
+  animation: bp-pulse-dot 1.8s ease-in-out infinite;
+}
+
+/* Infinite marquee */
+.bp-marquee {
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    transparent,
+    #000 10%,
+    #000 90%,
+    transparent
+  );
+  mask-image: linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent);
+}
+.bp-marquee-track {
+  display: flex;
+  width: max-content;
+  animation: bp-marquee 34s linear infinite;
+}
+.bp-marquee:hover .bp-marquee-track {
+  animation-play-state: paused;
+}
+
+/* Scroll-reveal (driven by IntersectionObserver in Reveal.tsx) */
+.bp-reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+.bp-reveal.bp-visible {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bp-blob,
+  .bp-blob-slow,
+  .bp-marquee-track,
+  .bp-gradient-text,
+  .bp-pulse-dot {
+    animation: none !important;
+  }
+  .bp-enter {
+    opacity: 1;
+    animation: none !important;
+  }
+  .bp-reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+}
