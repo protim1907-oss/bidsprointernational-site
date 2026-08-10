@@ -488,6 +488,70 @@ export default function BidsProInternationalWebsite() {
                 </div>
               </div>
               </Reveal>
+
+              <Reveal>
+              <div className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-xl transition duration-300 hover:-translate-y-1 hover:shadow-2xl">
+                <div className="p-8 pb-0">
+                  <div className="flex flex-wrap items-center gap-3">
+                    <span className="rounded-full px-4 py-1.5 text-xs font-bold text-white" style={{background: "linear-gradient(135deg, #3b82f6, #6366f1)"}}>MVP Design &amp; Development</span>
+                    <span className="rounded-full border border-slate-200 bg-slate-50 px-4 py-1.5 text-xs font-medium text-slate-600">Local Delivery &amp; Q-Commerce · Romania</span>
+                    <span className="rounded-full border border-slate-200 bg-slate-50 px-4 py-1.5 text-xs font-medium text-slate-600">Product Strategy &amp; MVP Engineering</span>
+                  </div>
+                  <h3 className="mt-5 text-2xl font-bold tracking-tight text-slate-900">Building the MVP for a Local Delivery Platform in Romania</h3>
+                  <p className="mt-3 text-sm leading-7 text-slate-500">
+                    How a lean product engineering team took a local delivery concept from zero to a live, multi-sided marketplace in months, not years.
+                  </p>
+                </div>
+                <div className="grid gap-0 lg:grid-cols-2">
+                  <div className="border-t border-slate-100 p-8 lg:border-r">
+                    <div className="flex items-center gap-3">
+                      <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-red-50 text-red-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.8} stroke="currentColor" className="h-5 w-5">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" />
+                        </svg>
+                      </div>
+                      <div className="text-xs font-bold uppercase tracking-widest text-slate-400">The Problem</div>
+                    </div>
+                    <p className="mt-4 text-sm leading-7 text-slate-600">
+                      A founding team had validated a local delivery concept for Romania but had no product yet — no app, no backend, no courier network, and no internal engineering team. Launching meant designing for three users at once — customers who needed fast, trustworthy ordering; restaurants and shops who needed simple order management; and couriers who needed clear, real-time job assignments — all on a limited runway, with no existing payments, tracking, or dispatch infrastructure, and a foundation that would later have to scale to new cities without a rebuild.
+                    </p>
+                  </div>
+                  <div className="border-t border-slate-100 p-8">
+                    <div className="flex items-center gap-3">
+                      <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-green-50 text-green-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.8} stroke="currentColor" className="h-5 w-5">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg>
+                      </div>
+                      <div className="text-xs font-bold uppercase tracking-widest text-slate-400">The Solution</div>
+                    </div>
+                    <p className="mt-4 text-sm leading-7 text-slate-600">
+                      BidsPro International designed and shipped the MVP as four connected modules on a shared backend, so a change in one — a new payment method or an updated dispatch rule — flows through the whole platform. We built a streamlined customer ordering app, a real-time courier dispatch engine with live-map tracking, a lightweight partner portal for restaurants and shops, and an internal admin &amp; analytics dashboard — moving at startup speed while making architecture decisions that support new cities and categories without a rebuild.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex flex-wrap items-center gap-x-8 gap-y-4 border-t border-slate-100 bg-slate-50 px-8 py-6">
+                  <div className="text-xs font-bold uppercase tracking-widest text-slate-400">Results</div>
+                  <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm font-semibold text-slate-700">
+                    <span><span className="text-green-600">Months, not years</span> to a live MVP</span>
+                    <span><span className="text-green-600">3-sided</span> marketplace launched as one platform</span>
+                    <span><span className="text-green-600">Live orders</span> validating the model</span>
+                    <span><span className="text-green-600">Built to extend</span> — new cities, no rebuild</span>
+                  </div>
+                  <a
+                    href="/case-studies/local-delivery-platform-mvp-romania.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="ml-auto inline-flex items-center gap-2 rounded-2xl bg-slate-900 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-slate-800"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.8} stroke="currentColor" className="h-4 w-4">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                    </svg>
+                    Download case study (PDF)
+                  </a>
+                </div>
+              </div>
+              </Reveal>
             </div>
           </div>
         </section>
