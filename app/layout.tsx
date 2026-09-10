@@ -1,5 +1,9 @@
 import "./globals.css";
 import type { Metadata } from "next";
+import Script from "next/script";
+
+// Google Analytics 4 measurement ID for www.bidsprointernational.com.
+const GA_MEASUREMENT_ID = "G-MRTSTCM520";
 
 export const metadata: Metadata = {
   title: "BidsPro International | Product & MVP Development for US & Europe",
@@ -64,7 +68,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        {children}
+        {/* Google Analytics 4 (gtag.js) */}
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="ga4-init" strategy="afterInteractive">
+          {`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', '${GA_MEASUREMENT_ID}');`}
+        </Script>
+      </body>
     </html>
   );
 }
