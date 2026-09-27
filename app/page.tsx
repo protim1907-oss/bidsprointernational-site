@@ -3,6 +3,7 @@ import CountUp from "./components/CountUp";
 import ScrollProgress from "./components/ScrollProgress";
 import TechMarquee from "./components/TechMarquee";
 import LaptopFrame from "./components/LaptopFrame";
+import ContactForm from "./components/ContactForm";
 
 export default function BidsProInternationalWebsite() {
   const stats = [
@@ -682,25 +683,7 @@ export default function BidsProInternationalWebsite() {
                 </div>
               </Reveal>
               <Reveal>
-              <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-lg">
-                <div className="grid gap-5 sm:grid-cols-2">
-                  <div>
-                    <label className="text-xs font-bold uppercase tracking-widest text-slate-500">Full Name</label>
-                    <input className="mt-2 w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm outline-none transition focus:border-green-400 focus:bg-white focus:ring-2 focus:ring-green-100" placeholder="Your name" />
-                  </div>
-                  <div>
-                    <label className="text-xs font-bold uppercase tracking-widest text-slate-500">Email</label>
-                    <input className="mt-2 w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm outline-none transition focus:border-green-400 focus:bg-white focus:ring-2 focus:ring-green-100" placeholder="you@company.com" />
-                  </div>
-                </div>
-                <div className="mt-5">
-                  <label className="text-xs font-bold uppercase tracking-widest text-slate-500">How can we help?</label>
-                  <textarea className="mt-2 h-36 w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm outline-none transition focus:border-green-400 focus:bg-white focus:ring-2 focus:ring-green-100" placeholder="Tell us about the product or MVP you want to build." />
-                </div>
-                <button className="mt-5 w-full rounded-2xl py-3.5 text-sm font-bold text-white shadow-md transition duration-200 hover:-translate-y-0.5 hover:opacity-90" style={{background: "linear-gradient(135deg, #16a34a 0%, #059669 100%)"}}>
-                  Tell Us About Your Product
-                </button>
-              </div>
+              <ContactForm />
               </Reveal>
             </div>
           </div>
