@@ -300,6 +300,48 @@ export default function BidsProInternationalWebsite() {
               <div className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-xl transition duration-300 hover:-translate-y-1 hover:shadow-2xl">
                 <div className="p-8 pb-0">
                   <div className="flex flex-wrap items-center gap-3">
+                    <span className="rounded-full px-4 py-1.5 text-xs font-bold text-white" style={{background: "linear-gradient(135deg, #3b82f6, #6366f1)"}}>Bump</span>
+                    <span className="rounded-full border border-slate-200 bg-slate-50 px-4 py-1.5 text-xs font-medium text-slate-600">In-house SaaS Product</span>
+                    <span className="rounded-full border border-slate-200 bg-slate-50 px-4 py-1.5 text-xs font-medium text-slate-600">AI Product Demo</span>
+                  </div>
+                  <h3 className="mt-5 text-2xl font-bold tracking-tight text-slate-900">Bump — An AI Accounts Receivable Collection Engine</h3>
+                  <p className="mt-3 text-sm leading-7 text-slate-500">
+                    Built by BidsPro International: Bump prioritises who to chase, escalates across email and WhatsApp, tracks promises-to-pay and payment plans, and collects on autopilot. Watch the product demo below.
+                  </p>
+                </div>
+                <div className="mt-6 overflow-hidden bg-slate-900" style={{aspectRatio: "16/9"}}>
+                  <video
+                    src="/videos/bump-product-demo.mp4#t=0.5"
+                    controls
+                    playsInline
+                    preload="metadata"
+                    className="block h-full w-full"
+                    title="Bump product demo – BidsPro International"
+                  />
+                </div>
+                <div className="flex flex-wrap items-center gap-x-8 gap-y-4 border-t border-slate-100 bg-slate-50 px-8 py-6">
+                  <div className="text-xs font-bold uppercase tracking-widest text-slate-400">Highlights</div>
+                  <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm font-semibold text-slate-700">
+                    <span><span className="text-green-600">AI worklist</span> of who to chase today</span>
+                    <span><span className="text-green-600">Email → WhatsApp</span> escalation</span>
+                    <span><span className="text-green-600">Promise-to-pay</span> tracking</span>
+                    <span><span className="text-green-600">Autonomy dial</span> with guardrails</span>
+                  </div>
+                  <a
+                    href="https://bumppaid.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="ml-auto inline-flex items-center gap-2 rounded-2xl bg-slate-900 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-slate-800"
+                  >
+                    Visit bumppaid.com
+                  </a>
+                </div>
+              </div>
+              </Reveal>
+              <Reveal>
+              <div className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-xl transition duration-300 hover:-translate-y-1 hover:shadow-2xl">
+                <div className="p-8 pb-0">
+                  <div className="flex flex-wrap items-center gap-3">
                     <span className="rounded-full px-4 py-1.5 text-xs font-bold text-white" style={{background: "linear-gradient(135deg, #3b82f6, #6366f1)"}}>Civix250</span>
                     <span className="rounded-full border border-slate-200 bg-slate-50 px-4 py-1.5 text-xs font-medium text-slate-600">Eboriko Support LLC</span>
                     <span className="rounded-full border border-slate-200 bg-slate-50 px-4 py-1.5 text-xs font-medium text-slate-600">MVP Planning &amp; Execution</span>
