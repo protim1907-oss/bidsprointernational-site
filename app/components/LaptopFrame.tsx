@@ -13,7 +13,7 @@ export default function LaptopFrame({ children }: { children: React.ReactNode })
           {/* Webcam dot */}
           <div className="mx-auto mb-2 h-1.5 w-1.5 rounded-full bg-slate-700 ring-1 ring-slate-600" />
           {/* Display */}
-          <div className="relative overflow-hidden rounded-lg border border-slate-800 bg-slate-900">
+          <div className="relative overflow-hidden rounded-lg border border-slate-200 bg-white">
             <div className="bp-screen-content p-5">{children}</div>
             {/* Sweeping glare + static reflection */}
             <div className="bp-screen-glare" />

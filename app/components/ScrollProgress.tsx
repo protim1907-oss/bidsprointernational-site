@@ -42,7 +42,7 @@ export default function ScrollProgress() {
         className="h-full origin-left"
         style={{
           transform: `scaleX(${progress})`,
-          background: "linear-gradient(90deg, #3b82f6, #6366f1, #60a5fa)",
+          background: "linear-gradient(90deg, #16a34a, #059669, #22c55e)",
         }}
       />
     </div>

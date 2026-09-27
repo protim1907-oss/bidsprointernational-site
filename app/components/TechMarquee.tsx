@@ -39,7 +39,7 @@ export default function TechMarquee() {
                 key={`${copy}-${item}`}
                 className="flex items-center gap-3 whitespace-nowrap text-sm font-semibold text-slate-400"
               >
-                <span className="h-1.5 w-1.5 rounded-full bg-blue-500/70" />
+                <span className="h-1.5 w-1.5 rounded-full bg-green-500/70" />
                 {item}
               </li>
             ))}
