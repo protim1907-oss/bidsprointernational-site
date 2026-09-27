@@ -1,4 +1,9 @@
 const TECH = [
+  "Claude & OpenAI APIs",
+  "AI Agents & Tool Use",
+  "Voice AI",
+  "Supabase",
+  "Vercel",
   "React Native",
   "TypeScript",
   "Node.js / NestJS",

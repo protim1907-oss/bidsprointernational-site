@@ -6,10 +6,16 @@ import Script from "next/script";
 const GA_MEASUREMENT_ID = "G-MRTSTCM520";
 
 export const metadata: Metadata = {
-  title: "BidsPro International | Product & MVP Development for US & Europe",
+  title: "BidsPro International | AI-Powered MVP & Custom Software Development",
   description:
-    "BidsPro International is a product development partner that helps startups, civic-tech teams, and growing organisations take an idea from concept to a working MVP — with senior-led build leadership, structured roadmaps, and launch and iteration support across the US and Europe.",
+    "BidsPro International builds MVPs, prototypes, and custom software using AI agents and automated workflows — led and reviewed by senior engineers. AI-accelerated product development, software configuration, and workflow automation for the US and Europe.",
   keywords: [
+    "AI MVP development",
+    "AI-powered software development",
+    "AI agents development",
+    "AI workflow automation",
+    "custom software development",
+    "software configuration and integration",
     "MVP development",
     "product development",
     "product development partner",
@@ -28,24 +34,24 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.bidsprointernational.com",
-    title: "BidsPro International | Product & MVP Development",
+    title: "BidsPro International | AI-Powered MVP & Custom Software Development",
     description:
-      "A product development partner helping startups and teams take ideas from concept to a working MVP — with senior-led build leadership and structured roadmaps, from idea to launch and beyond.",
+      "MVPs, prototypes, and custom software built with AI agents and automated workflows — led and reviewed by senior engineers, from idea to launch.",
     siteName: "BidsPro International",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "BidsPro International – Product & MVP Development",
+        alt: "BidsPro International – AI-Powered MVP & Custom Software Development",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "BidsPro International | Product & MVP Development",
+    title: "BidsPro International | AI-Powered MVP & Custom Software Development",
     description:
-      "Helping startups and teams take ideas from concept to a working MVP — senior-led product development, from idea to launch.",
+      "MVPs, prototypes, and custom software built with AI — senior-led, from idea to launch.",
     images: ["/og-image.png"],
   },
   robots: {

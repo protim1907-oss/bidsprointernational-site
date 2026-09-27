@@ -19,8 +19,8 @@ export default function BidsProInternationalWebsite() {
           <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0-1 3m8.5-3 1 3m0 0 .5 1.5m-.5-1.5h-9.5m0 0-.5 1.5M9 11.25v1.5M12 9v3.75m3-6v6" />
         </svg>
       ),
-      title: "Product & MVP Development",
-      desc: "End-to-end product definition and build leadership — from first sketch to a working MVP your users can actually try.",
+      title: "AI-Powered MVPs & Prototypes",
+      desc: "We use AI coding agents and automated workflows to turn your idea into a clickable prototype in days and a working MVP your users can try in weeks — not months.",
     },
     {
       icon: (
@@ -28,8 +28,8 @@ export default function BidsProInternationalWebsite() {
           <path strokeLinecap="round" strokeLinejoin="round" d="M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25m18 0A2.25 2.25 0 0 0 18.75 3H5.25A2.25 2.25 0 0 0 3 5.25m18 0H3" />
         </svg>
       ),
-      title: "Discovery, Scope & Roadmap",
-      desc: "Structured discovery workshops that turn a raw idea into a clear scope, user journeys, platform architecture, and a phased build roadmap.",
+      title: "Custom Software Applications",
+      desc: "Web, mobile, and internal tools built with AI-accelerated engineering — senior engineers direct the agents, review every change, and own the architecture.",
     },
     {
       icon: (
@@ -37,8 +37,8 @@ export default function BidsProInternationalWebsite() {
           <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 0 0 2.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 0 0-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75 2.25 2.25 0 0 0-.1-.664m-5.8 0A2.251 2.251 0 0 1 13.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25Z" />
         </svg>
       ),
-      title: "Hands-On Build Leadership",
-      desc: "Senior-led oversight that keeps engineering, design, and stakeholders moving together — with milestone tracking and transparent reporting along the way.",
+      title: "Software Configuration & Integration",
+      desc: "Configuring and connecting the platforms you already run — CRMs, ERPs, accounting, and SaaS tools — with AI-assisted setup, data mapping, and testing.",
     },
     {
       icon: (
@@ -46,32 +46,32 @@ export default function BidsProInternationalWebsite() {
           <path strokeLinecap="round" strokeLinejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418" />
         </svg>
       ),
-      title: "Launch & Iteration Support",
-      desc: "Getting your MVP into the world, then using real user feedback to plan what gets built next — for startups, civic platforms, and growing organisations across the US and Europe.",
+      title: "AI Agents & Workflow Automation",
+      desc: "Agentic features inside your product and automations around it — assistants, inbound triage, voice agents, and back-office workflows that run with humans in the loop.",
     },
   ];
 
   const sectors = [
     { label: "Civic Tech & Public-Interest Platforms", icon: "🏛️" },
     { label: "Startups & Early-Stage Products", icon: "💡" },
-    { label: "Digital Transformation Initiatives", icon: "🔄" },
+    { label: "AI Adoption & Digital Transformation", icon: "🤖" },
     { label: "SaaS & Product-Led Businesses", icon: "🚀" },
     { label: "Consulting & Professional-Services Platforms", icon: "💼" },
     { label: "Cross-Border Product Teams (US & EU)", icon: "🌐" },
   ];
 
   const differentiators = [
-    { num: "01", title: "Product-First", desc: "Everything starts with the product: what you're building, who it's for, and what \"launched\" looks like for version one." },
-    { num: "02", title: "Senior-Led", desc: "Direct involvement from experienced product and delivery leaders in every workshop, decision, and milestone — no hand-offs to junior teams." },
-    { num: "03", title: "Built for Momentum", desc: "Practical, hands-on support for early-stage products and MVP builds that keeps the work moving instead of stalling." },
-    { num: "04", title: "Structured, Not Bureaucratic", desc: "Just enough planning, reporting, and governance to keep a build on track — without slowing it down." },
+    { num: "01", title: "AI-Native Delivery", desc: "AI is built into how we work — research, specs, prototyping, coding, testing, and documentation — so you get more product for the same budget and time." },
+    { num: "02", title: "Senior-Led, Human-Reviewed", desc: "Experienced product and engineering leaders steer the AI and review what it produces. Agents speed up the work; people stay accountable for quality and decisions." },
+    { num: "03", title: "Speed Without Shortcuts", desc: "Faster iterations mean you see working software early, test it with real users, and change direction cheaply — without skipping security or code quality." },
+    { num: "04", title: "Product-First, Not Hype-First", desc: "We use AI where it moves the product forward, not as a buzzword. Everything starts with what you're building, who it's for, and what launch looks like." },
   ];
 
   const capabilities = [
-    "MVP and product definition: scope, user journeys, architecture, and roadmap",
-    "Hands-on delivery leadership from first sprint through launch",
-    "Stakeholder alignment, milestone tracking, and transparent reporting",
-    "Ongoing iteration support as your product grows after launch",
+    "AI-accelerated MVPs and rapid prototypes",
+    "Custom web, mobile, and internal software",
+    "Software configuration and system integration",
+    "AI agents and workflow automation, human-in-the-loop",
   ];
 
   return (
@@ -88,7 +88,7 @@ export default function BidsProInternationalWebsite() {
             </div>
             <div>
               <div className="text-base font-bold tracking-tight text-slate-900">BidsPro International</div>
-              <div className="text-xs text-slate-400">Product Development • MVP Delivery • Idea to Launch</div>
+              <div className="text-xs text-slate-400">AI-Powered MVPs • Custom Software • Automation</div>
             </div>
           </div>
           <nav className="hidden gap-7 text-sm font-medium text-slate-500 md:flex">
@@ -115,16 +115,16 @@ export default function BidsProInternationalWebsite() {
             <div>
               <div className="bp-enter bp-enter-1 mb-6 inline-flex items-center gap-2 rounded-full border border-blue-500/30 bg-blue-500/10 px-4 py-2 text-xs font-medium text-blue-300">
                 <span className="bp-pulse-dot h-1.5 w-1.5 rounded-full bg-blue-400" />
-                Serving clients across Europe and the U.S.
+                AI-native product studio · Europe &amp; the U.S.
               </div>
               <h1 className="bp-enter bp-enter-2 max-w-2xl text-4xl font-bold leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl">
-                We Build Digital Products —{" "}
+                We Build Software with AI —{" "}
                 <span className="bp-gradient-text" style={{background: "linear-gradient(90deg, #60a5fa, #818cf8, #60a5fa)", WebkitBackgroundClip: "text", backgroundClip: "text", WebkitTextFillColor: "transparent"}}>
-                  From Idea to Launch
+                  Idea to Launch, Faster
                 </span>
               </h1>
               <p className="bp-enter bp-enter-3 mt-6 max-w-xl text-lg leading-8 text-slate-400">
-                BidsPro International is a product development partner for startups, civic-tech teams, and growing organisations. We take your idea from concept to a working MVP — and bring the structure, technical direction, and senior leadership real products need to actually reach launch.
+                BidsPro International builds MVPs, prototypes, and custom software using AI agents and automated workflows — directed and reviewed by senior engineers. You get working software sooner, for less, with the structure and leadership it takes to actually reach launch.
               </p>
               <div className="bp-enter bp-enter-4 mt-8 flex flex-wrap gap-4">
                 <a href="#contact" className="rounded-2xl px-7 py-3.5 text-sm font-semibold text-white shadow-lg transition duration-200 hover:-translate-y-0.5 hover:opacity-90 hover:shadow-blue-500/30" style={{background: "linear-gradient(135deg, #3b82f6 0%, #6366f1 100%)"}}>
@@ -136,9 +136,9 @@ export default function BidsProInternationalWebsite() {
               </div>
               <div className="bp-enter bp-enter-5 mt-12 grid max-w-xl gap-4 sm:grid-cols-3">
                 {[
-                  ["Built to Launch", "MVPs that reach real users — not plans that sit on a shelf"],
-                  ["Senior-Led Craft", "Direct involvement from experienced product leaders"],
-                  ["Structured Momentum", "Clear roadmaps and milestones that keep builds on track"],
+                  ["AI-Accelerated", "Agentic workflows compress weeks of build into days"],
+                  ["Senior-Led", "Experienced leaders steer the AI and own every decision"],
+                  ["Built to Launch", "Working software in users' hands, not slideware"],
                 ].map(([title, desc]) => (
                   <div key={title} className="rounded-2xl border border-slate-700/60 bg-slate-800/50 p-4 backdrop-blur transition duration-200 hover:-translate-y-1 hover:border-blue-500/40 hover:bg-slate-800/80">
                     <div className="text-sm font-semibold text-white">{title}</div>
@@ -152,7 +152,7 @@ export default function BidsProInternationalWebsite() {
               <LaptopFrame>
                 <div className="rounded-2xl p-5 text-white" style={{background: "linear-gradient(135deg, #1d4ed8 0%, #4338ca 100%)"}}>
                   <div className="text-xs font-semibold uppercase tracking-widest text-blue-200">Core Focus</div>
-                  <div className="mt-2 text-xl font-semibold leading-7">Helping founders and teams turn ideas into working products — with the structure, technical direction, and delivery discipline that takes an MVP from concept to launch, and beyond.</div>
+                  <div className="mt-2 text-xl font-semibold leading-7">Using AI agents and automated workflows to design, build, and ship MVPs and custom software — faster than a traditional team, with senior engineers accountable for every line.</div>
                 </div>
                 <div className="mt-4 grid gap-4 sm:grid-cols-2">
                   <div className="rounded-2xl border border-slate-700/60 bg-slate-900/50 p-4">
@@ -167,14 +167,14 @@ export default function BidsProInternationalWebsite() {
                   <div className="rounded-2xl border border-slate-700/60 bg-slate-900/50 p-4">
                     <div className="text-xs font-semibold uppercase tracking-widest text-slate-400">Typical Engagements</div>
                     <div className="mt-2 text-xs leading-6 text-slate-300">
-                      MVP builds, digital product launches, civic-tech platforms, founder-led product roadmaps, and post-launch iteration support.
+                      AI-built MVPs and prototypes, custom business applications, platform configuration and integrations, and AI agents embedded in existing products.
                     </div>
                   </div>
                 </div>
                 <div className="mt-4 rounded-2xl border border-dashed border-slate-600 p-4">
-                  <div className="text-xs font-semibold uppercase tracking-widest text-slate-400">Build Style</div>
+                  <div className="text-xs font-semibold uppercase tracking-widest text-slate-400">How We Work</div>
                   <div className="mt-2 text-xs leading-6 text-slate-300">
-                    Practical, collaborative, and launch-focused — tailored to the scale, urgency, and complexity of each product.
+                    AI does the heavy lifting; people make the calls. Practical, collaborative, and launch-focused.
                   </div>
                 </div>
               </LaptopFrame>
@@ -186,7 +186,7 @@ export default function BidsProInternationalWebsite() {
         <section className="border-b border-slate-800 bg-slate-950">
           <div className="mx-auto max-w-7xl px-6 py-8">
             <div className="mb-2 text-center text-xs font-semibold uppercase tracking-widest text-slate-500">
-              Built with the tools that ship real products
+              AI-native tooling on proven, production-grade stacks
             </div>
             <TechMarquee />
           </div>
@@ -219,8 +219,8 @@ export default function BidsProInternationalWebsite() {
         <section id="services" className="mx-auto max-w-7xl px-6 py-20 lg:py-28">
           <Reveal className="text-center max-w-2xl mx-auto">
             <div className="inline-flex rounded-full border border-blue-100 bg-blue-50 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-blue-600">What We Build</div>
-            <h2 className="mt-4 text-3xl font-bold tracking-tight sm:text-4xl">Product &amp; MVP development built for launch</h2>
-            <p className="mt-4 text-lg leading-8 text-slate-500">From first idea to a working product in users' hands — with the structure, technical direction, and senior leadership it takes to actually ship.</p>
+            <h2 className="mt-4 text-3xl font-bold tracking-tight sm:text-4xl">AI-accelerated software, built for launch</h2>
+            <p className="mt-4 text-lg leading-8 text-slate-500">MVPs, custom applications, and software configuration — delivered with AI agents and automated workflows, and led by people who've shipped real products.</p>
           </Reveal>
           <div className="mt-14 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
             {services.map((service, i) => (
@@ -245,7 +245,7 @@ export default function BidsProInternationalWebsite() {
                 <div className="inline-flex rounded-full border border-blue-500/30 bg-blue-500/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-blue-400">Industries</div>
                 <h2 className="mt-4 text-3xl font-bold tracking-tight sm:text-4xl">Industries we build products for</h2>
                 <p className="mt-4 text-lg leading-8 text-slate-400">
-                  We partner with founders and teams building digital products across these spaces — wherever your product needs to launch and grow.
+                  We partner with founders and teams across these spaces — bringing AI-accelerated delivery wherever your product needs to launch and grow.
                 </p>
                 <a href="#contact" className="mt-8 inline-flex rounded-2xl px-6 py-3 text-sm font-semibold text-white transition duration-200 hover:-translate-y-0.5 hover:opacity-90" style={{background: "linear-gradient(135deg, #3b82f6 0%, #6366f1 100%)"}}>
                   Start Your Product
@@ -269,8 +269,8 @@ export default function BidsProInternationalWebsite() {
         <section id="why-us" className="mx-auto max-w-7xl px-6 py-20 lg:py-28">
           <Reveal className="text-center max-w-2xl mx-auto">
             <div className="inline-flex rounded-full border border-blue-100 bg-blue-50 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-blue-600">Why BidsPro</div>
-            <h2 className="mt-4 text-3xl font-bold tracking-tight sm:text-4xl">A product partner, not just a service provider</h2>
-            <p className="mt-4 text-lg leading-8 text-slate-500">BidsPro International exists to help founders and teams turn ideas into working products — combining hands-on product development with the planning discipline that keeps ambitious builds on track, without the overhead of a large agency.</p>
+            <h2 className="mt-4 text-3xl font-bold tracking-tight sm:text-4xl">An AI-native product partner, not a traditional agency</h2>
+            <p className="mt-4 text-lg leading-8 text-slate-500">BidsPro International combines AI-powered engineering with senior product leadership — so founders and teams get working software faster and more affordably, without the overhead of a large agency.</p>
           </Reveal>
           <div className="mt-14 grid gap-6 md:grid-cols-2">
             {differentiators.map((item, i) => (
@@ -293,7 +293,7 @@ export default function BidsProInternationalWebsite() {
             <Reveal className="text-center max-w-2xl mx-auto">
               <div className="inline-flex rounded-full border border-blue-100 bg-blue-50 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-blue-600">Case Studies</div>
               <h2 className="mt-4 text-3xl font-bold tracking-tight sm:text-4xl">Delivery in practice</h2>
-              <p className="mt-4 text-lg leading-8 text-slate-500">How BidsPro International helps clients move from idea to execution.</p>
+              <p className="mt-4 text-lg leading-8 text-slate-500">Products we&apos;ve planned, built, and shipped — including our own AI-native software.</p>
             </Reveal>
             <div className="mt-14 space-y-8">
               <Reveal>
@@ -604,17 +604,17 @@ export default function BidsProInternationalWebsite() {
             <div className="grid gap-14 lg:grid-cols-[1fr_1fr]">
               <Reveal>
                 <div className="inline-flex rounded-full border border-blue-500/30 bg-blue-500/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-blue-400">How We Build</div>
-                <h2 className="mt-4 text-3xl font-bold tracking-tight text-white sm:text-4xl">A structured path from concept to launch</h2>
+                <h2 className="mt-4 text-3xl font-bold tracking-tight text-white sm:text-4xl">An AI-accelerated path from concept to launch</h2>
                 <p className="mt-4 text-lg leading-8 text-slate-400">
-                  Most products don't fail because the idea was wrong — they fail because no one carried the plan through to launch. Here's how we keep that from happening to yours.
+                  AI agents do the repetitive work at every stage; senior people make the decisions and review the output. The result: shorter cycles, earlier feedback, and a clear path to launch.
                 </p>
               </Reveal>
               <div className="grid gap-3">
                 {[
-                  ["01", "Discover — stakeholder workshops and scope alignment"],
-                  ["02", "Define — roadmap planning, user journeys, and milestones"],
-                  ["03", "Build — hands-on execution, tracking, and reporting"],
-                  ["04", "Launch & Grow — coordination through launch and beyond"],
+                  ["01", "Discover — workshops plus AI-assisted research and requirements"],
+                  ["02", "Prototype — AI-generated, clickable prototypes to validate early"],
+                  ["03", "Build — agentic coding and automated testing, human-reviewed"],
+                  ["04", "Launch & Grow — AI-powered monitoring, feedback, and iteration"],
                 ].map(([num, item], i) => (
                   <Reveal key={num} delay={i * 90}>
                     <div className="group flex items-center gap-4 rounded-2xl border border-slate-700/60 bg-slate-800/50 px-6 py-4 transition duration-200 hover:-translate-y-0.5 hover:border-blue-500/40 hover:bg-slate-800/80">
@@ -640,7 +640,7 @@ export default function BidsProInternationalWebsite() {
                 <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl text-base font-bold text-white shadow-md" style={{background: "linear-gradient(135deg, #3b82f6, #6366f1)"}}>B</div>
                 <div>
                   <div className="text-sm font-bold text-slate-900">BidsPro International</div>
-                  <div className="text-xs text-slate-400">IT Management • Program Delivery • MVP Advisory</div>
+                  <div className="text-xs text-slate-400">AI Product Development • MVP Delivery • Custom Software</div>
                 </div>
               </div>
               <div className="mt-6 space-y-4 text-sm leading-7 text-slate-600">
@@ -669,9 +669,9 @@ export default function BidsProInternationalWebsite() {
             <div className="grid gap-14 lg:grid-cols-[0.9fr_1.1fr]">
               <Reveal>
                 <div className="inline-flex rounded-full border border-blue-100 bg-blue-50 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-blue-600">Start a Project</div>
-                <h2 className="mt-4 text-3xl font-bold tracking-tight sm:text-4xl">Have a product idea? Let's build it.</h2>
+                <h2 className="mt-4 text-3xl font-bold tracking-tight sm:text-4xl">Have a product idea? Let's build it — with AI.</h2>
                 <p className="mt-4 text-lg leading-8 text-slate-500">
-                  Whether you're starting from a sketch on a napkin or a half-built platform that's lost momentum, BidsPro International can help you define it, plan it, and bring it to launch. Tell us what you're building.
+                  Whether you're starting from a sketch on a napkin, a half-built platform that's lost momentum, or software you need configured and automated, BidsPro International can prototype it, build it with AI, and bring it to launch. Tell us what you're building.
                 </p>
                 <div className="mt-8 space-y-3 text-sm text-slate-600">
                   <div className="flex items-center gap-2"><span className="font-semibold text-slate-800">Website:</span> bidsprointernational.com</div>
@@ -711,7 +711,7 @@ export default function BidsProInternationalWebsite() {
       <footer style={{background: "#0f172a"}}>
         <div className="mx-auto flex max-w-7xl flex-col gap-3 px-6 py-8 text-xs text-slate-500 sm:flex-row sm:items-center sm:justify-between">
           <div>© {new Date().getFullYear()} BidsPro International. All rights reserved.</div>
-          <div>Product development, MVP delivery, and launch support for Europe and the U.S.</div>
+          <div>AI-powered MVPs, custom software, and automation for Europe and the U.S.</div>
         </div>
       </footer>
 
