@@ -135,6 +135,21 @@ export default function BidsProInternationalWebsite() {
                   See What We've Built
                 </a>
               </div>
+              <div className="bp-enter bp-enter-4 mt-6">
+                <a
+                  href="https://www.producthunt.com/products/bump-7?embed=true&utm_source=badge-featured&utm_medium=badge&utm_campaign=badge-bump-169ea24d-6dbd-4f9a-a8ae-fc80a3644d7e"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block transition duration-200 hover:-translate-y-0.5"
+                >
+                  <img
+                    alt="Bump - Your AI collections team for email and WhatsApp | Product Hunt"
+                    width={250}
+                    height={54}
+                    src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1260871&theme=dark&t=1790421574859"
+                  />
+                </a>
+              </div>
               <div className="bp-enter bp-enter-5 mt-12 grid max-w-xl gap-4 sm:grid-cols-3">
                 {[
                   ["AI-Accelerated", "Agentic workflows compress weeks of build into days"],
